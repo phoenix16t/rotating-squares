@@ -1,0 +1,35 @@
+$cell-size: 30px;
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+#root, #root-dev {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+.row {
+  display: flex;
+}
+
+.cell {
+  height: $cell-size;
+  width: $cell-size;
+}
+
+.rotator {
+  height: 100%;
+  width: 100%;
+  &.right {
+    background-color: red;
+  }
+  &.left {
+    background-color: blue;
+  }
+}
