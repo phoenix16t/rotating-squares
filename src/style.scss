@@ -1,4 +1,5 @@
 $cell-size: 30px;
+$speed: 1s;
 
 html, body {
   height: 100%;
@@ -27,9 +28,21 @@ html, body {
   height: 100%;
   width: 100%;
   &.right {
+    animation: rotator-right-animation $speed infinite;
     background-color: red;
   }
   &.left {
+  animation: rotator-left-animation $speed infinite;
     background-color: blue;
   }
+}
+
+
+@keyframes rotator-left-animation {
+  50% { transform: rotateZ(-45deg); }
+  100% { transform: rotateZ(-90deg); }
+}
+@keyframes rotator-right-animation {
+  50% { transform: rotateZ(45deg); }
+  100% { transform: rotateZ(90deg); }
 }
