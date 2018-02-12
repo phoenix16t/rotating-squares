@@ -9,11 +9,11 @@ html, body {
   width: 100%;
 }
 
-#root, #root-dev {
+#root {
   align-items: center;
   display: flex;
-  justify-content: center;
   height: 100%;
+  justify-content: center;
 }
 
 .row {
@@ -37,13 +37,13 @@ html, body {
 .rotator {
   height: @cell-size;
   width: @cell-size;
-  &.right {
-    animation: rotator-right-ani @speed infinite;
-    background-color: red;
-  }
   &.left {
     animation: rotator-left-ani @speed infinite;
     background-color: blue;
+  }
+  &.right {
+    animation: rotator-right-ani @speed infinite;
+    background-color: red;
   }
 }
 

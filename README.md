@@ -22,6 +22,7 @@ This will run the build and serve the project on localhost:3000
 ## Versioning
 Version | Update
 --- | --- |
+1.0.0 | Implementing JS - MVP
 0.0.4 | Added pulse animations
 0.0.3 | Added rotator animations
 0.0.2 | Added basic layout
