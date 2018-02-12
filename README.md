@@ -1,8 +1,10 @@
 # Rotating Squares
-A fun little visualization showing squares rotating in unison
+
+## Live View
+See the code run live in [Codepen](https://codepen.io/edj/pen/gooLmp)
 
 ## Getting Started
-Just download the project
+Just clone the repo
 ```
 git clone https://github.com/phoenix16t/rotating-squares.git
 ```
