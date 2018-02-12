@@ -17,11 +17,11 @@ module.exports = {
         }
       },
       {
-        test: /\.scss$/,
+        test: /\.less$/,
         use: [
           { loader: "style-loader" },
           { loader: "css-loader" },
-          { loader: "sass-loader" }
+          { loader: "less-loader" }
         ]
       }
     ]

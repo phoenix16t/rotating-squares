@@ -1,0 +1,57 @@
+@cell-size: 30px;
+@diagonal-size: sqrt((@cell-size * @cell-size) + (@cell-size * @cell-size));
+@speed: 1s;
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+#root, #root-dev {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+.row {
+  display: flex;
+}
+
+.cell {
+  align-items: center;
+  animation: cell-ani @speed infinite;
+  display: flex;
+  height: @cell-size;
+  justify-content: center;
+  width: @cell-size;
+}
+
+@keyframes cell-ani {
+  50% { height: @diagonal-size; width: @diagonal-size; }
+  100% { height: @cell-size; width: @cell-size; }
+}
+
+.rotator {
+  height: @cell-size;
+  width: @cell-size;
+  &.right {
+    animation: rotator-right-ani @speed infinite;
+    background-color: red;
+  }
+  &.left {
+    animation: rotator-left-ani @speed infinite;
+    background-color: blue;
+  }
+}
+
+@keyframes rotator-left-ani {
+  50% { transform: rotateZ(-45deg); }
+  100% { transform: rotateZ(-90deg); }
+}
+@keyframes rotator-right-ani {
+  50% { transform: rotateZ(45deg); }
+  100% { transform: rotateZ(90deg); }
+}

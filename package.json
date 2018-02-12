@@ -1,6 +1,6 @@
 {
   "name": "rotating-squares",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "description": "Rotating squares visualization",
   "main": "src/index.js",
   "dependencies": {
@@ -15,8 +15,8 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-1": "^6.24.1",
     "css-loader": "^0.28.9",
-    "node-sass": "^4.7.2",
-    "sass-loader": "^6.0.6",
+    "less": "^3.0.0",
+    "less-loader": "^4.0.5",
     "style-loader": "^0.20.1",
     "webpack": "^3.10.0",
     "webpack-dev-server": "^2.11.1"
